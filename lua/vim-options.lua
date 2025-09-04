@@ -13,3 +13,6 @@ vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 vim.opt.relativenumber = true
 
 vim.opt.signcolumn = "yes"
+
+-- escape in term mode
+vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>')

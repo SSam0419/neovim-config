@@ -48,6 +48,17 @@ return {
       -- code actions (fixes/refactoring)
       vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
 
+      -- code actions (import)
+      vim.keymap.set('n', '<leader>ci', function()
+        vim.lsp.buf.code_action({
+          filter = function(action)
+            return action.kind and string.match(action.kind, 'source%..*import')
+          end,
+          apply = true
+        })
+      end, { desc = 'Auto import' })
+
+
       -- show diagnostics in floating window
       vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, {})
 
