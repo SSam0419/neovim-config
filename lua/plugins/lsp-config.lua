@@ -9,9 +9,6 @@ return {
 					"gopls",
 					"rust_analyzer",
 					"clangd",
-					"rustfmt",
-					"clippy",
-					"taplo",
 				},
 			})
 		end,

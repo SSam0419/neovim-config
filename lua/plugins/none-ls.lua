@@ -16,11 +16,11 @@ return {
 				null_ls.builtins.completion.spell,
 
 				-- Rust
-				null_ls.builtins.formatting.rustfmt,
-				null_ls.builtins.diagnostics.clippy,
+				-- null_ls.builtins.formatting.rustfmt,
+				-- null_ls.builtins.diagnostics.clippy,
 
 				-- TOML (Cargo.toml)
-				null_ls.builtins.formatting.taplo,
+				-- null_ls.builtins.formatting.taplo,
 			},
 		})
 	end,
